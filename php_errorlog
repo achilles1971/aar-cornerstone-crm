@@ -1,0 +1,105 @@
+[01-Sep-2026 15:18:02 UTC] PHP Fatal error:  Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_REST_Request given in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php:1612
+Stack trace:
+#0 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(1612): preg_match('/[\\x80-\\xff]/', Object(WP_REST_Request))
+#1 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(2232): remove_accents(Object(WP_REST_Request))
+#2 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(163): sanitize_title(Object(WP_REST_Request))
+#3 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(101): AAR_IDX_Listings::query_cpt_listings(Array)
+#4 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-rest-api.php(123): AAR_IDX_Listings::query_listings(Array)
+#5 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1293): AAR_IDX_REST::get_listings(Object(WP_REST_Request))
+#6 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1126): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/aar/v1/listing...', Array, NULL)
+#7 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(441): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api.php(488): WP_REST_Server->serve_request('/aar/v1/listing...')
+#9 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(353): rest_api_loaded(Object(WP))
+#10 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters('', Array)
+#11 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/plugin.php(571): WP_Hook->do_action(Array)
+#12 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#13 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(821): WP->parse_request('')
+#14 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/functions.php(1352): WP->main('')
+#15 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-blog-header.php(16): wp()
+#16 /home/customer/www/aaronatkinsonrealty.com/public_html/index.php(17): require('/home/customer/...')
+#17 {main}
+  thrown in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php on line 1612
+[01-Sep-2026 15:18:06 UTC] PHP Fatal error:  Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_REST_Request given in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php:1612
+Stack trace:
+#0 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(1612): preg_match('/[\\x80-\\xff]/', Object(WP_REST_Request))
+#1 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(2232): remove_accents(Object(WP_REST_Request))
+#2 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(163): sanitize_title(Object(WP_REST_Request))
+#3 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(101): AAR_IDX_Listings::query_cpt_listings(Array)
+#4 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-rest-api.php(123): AAR_IDX_Listings::query_listings(Array)
+#5 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1293): AAR_IDX_REST::get_listings(Object(WP_REST_Request))
+#6 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1126): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/aar/v1/listing...', Array, NULL)
+#7 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(441): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api.php(488): WP_REST_Server->serve_request('/aar/v1/listing...')
+#9 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(353): rest_api_loaded(Object(WP))
+#10 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters('', Array)
+#11 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/plugin.php(571): WP_Hook->do_action(Array)
+#12 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#13 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(821): WP->parse_request('')
+#14 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/functions.php(1352): WP->main('')
+#15 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-blog-header.php(16): wp()
+#16 /home/customer/www/aaronatkinsonrealty.com/public_html/index.php(17): require('/home/customer/...')
+#17 {main}
+  thrown in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php on line 1612
+[01-Sep-2026 15:18:08 UTC] PHP Fatal error:  Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_REST_Request given in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php:1612
+Stack trace:
+#0 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(1612): preg_match('/[\\x80-\\xff]/', Object(WP_REST_Request))
+#1 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(2232): remove_accents(Object(WP_REST_Request))
+#2 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(163): sanitize_title(Object(WP_REST_Request))
+#3 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(101): AAR_IDX_Listings::query_cpt_listings(Array)
+#4 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-rest-api.php(123): AAR_IDX_Listings::query_listings(Array)
+#5 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1293): AAR_IDX_REST::get_listings(Object(WP_REST_Request))
+#6 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1126): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/aar/v1/listing...', Array, NULL)
+#7 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(441): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api.php(488): WP_REST_Server->serve_request('/aar/v1/listing...')
+#9 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(353): rest_api_loaded(Object(WP))
+#10 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters('', Array)
+#11 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/plugin.php(571): WP_Hook->do_action(Array)
+#12 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#13 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(821): WP->parse_request('')
+#14 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/functions.php(1352): WP->main('')
+#15 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-blog-header.php(16): wp()
+#16 /home/customer/www/aaronatkinsonrealty.com/public_html/index.php(17): require('/home/customer/...')
+#17 {main}
+  thrown in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php on line 1612
+[01-Sep-2026 15:18:09 UTC] PHP Fatal error:  Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_REST_Request given in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php:1612
+Stack trace:
+#0 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(1612): preg_match('/[\\x80-\\xff]/', Object(WP_REST_Request))
+#1 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(2232): remove_accents(Object(WP_REST_Request))
+#2 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(163): sanitize_title(Object(WP_REST_Request))
+#3 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(101): AAR_IDX_Listings::query_cpt_listings(Array)
+#4 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-rest-api.php(123): AAR_IDX_Listings::query_listings(Array)
+#5 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1293): AAR_IDX_REST::get_listings(Object(WP_REST_Request))
+#6 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1126): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/aar/v1/listing...', Array, NULL)
+#7 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(441): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api.php(488): WP_REST_Server->serve_request('/aar/v1/listing...')
+#9 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(353): rest_api_loaded(Object(WP))
+#10 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters('', Array)
+#11 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/plugin.php(571): WP_Hook->do_action(Array)
+#12 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#13 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(821): WP->parse_request('')
+#14 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/functions.php(1352): WP->main('')
+#15 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-blog-header.php(16): wp()
+#16 /home/customer/www/aaronatkinsonrealty.com/public_html/index.php(17): require('/home/customer/...')
+#17 {main}
+  thrown in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php on line 1612
+[01-Sep-2026 15:18:11 UTC] PHP Fatal error:  Uncaught TypeError: preg_match(): Argument #2 ($subject) must be of type string, WP_REST_Request given in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php:1612
+Stack trace:
+#0 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(1612): preg_match('/[\\x80-\\xff]/', Object(WP_REST_Request))
+#1 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php(2232): remove_accents(Object(WP_REST_Request))
+#2 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(163): sanitize_title(Object(WP_REST_Request))
+#3 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-idx-listings.php(101): AAR_IDX_Listings::query_cpt_listings(Array)
+#4 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-content/plugins/aar-idx-listings/includes/class-rest-api.php(123): AAR_IDX_Listings::query_listings(Array)
+#5 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1293): AAR_IDX_REST::get_listings(Object(WP_REST_Request))
+#6 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(1126): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/aar/v1/listing...', Array, NULL)
+#7 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api/class-wp-rest-server.php(441): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#8 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/rest-api.php(488): WP_REST_Server->serve_request('/aar/v1/listing...')
+#9 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(353): rest_api_loaded(Object(WP))
+#10 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp-hook.php(377): WP_Hook->apply_filters('', Array)
+#11 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/plugin.php(571): WP_Hook->do_action(Array)
+#12 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#13 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/class-wp.php(821): WP->parse_request('')
+#14 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/functions.php(1352): WP->main('')
+#15 /home/customer/www/aaronatkinsonrealty.com/public_html/wp-blog-header.php(16): wp()
+#16 /home/customer/www/aaronatkinsonrealty.com/public_html/index.php(17): require('/home/customer/...')
+#17 {main}
+  thrown in /home/customer/www/aaronatkinsonrealty.com/public_html/wp-includes/formatting.php on line 1612
