@@ -1,0 +1,9 @@
+# WordPress config with live values — never commit
+wp-config.php
+
+# Error logs
+php_errorlog
+*.log
+
+# Raw DB dumps — schema-only versions belong in git, not raw dumps with data
+*.sql
